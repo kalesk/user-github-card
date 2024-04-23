@@ -1,38 +1,100 @@
-.App {
+body {
+  background: url('../public/Images/background\ github.jpg');
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.github-card {
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.github-card h1 {
+  margin-bottom: 20px;
+  color:black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.github-card form {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.github-card input {
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 80%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.github-card input:focus {
+  border-color: #0056b3;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.github-card button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.github-card button:hover {
+  background-color: #28a745;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-card button:focus {
+  outline: none;
+}
+
+.github-card button:active {
+  transform: translateY(1px);
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.content-wrapper {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 4px black solid;
+  
+}
+
+.form-border {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.github-card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }
